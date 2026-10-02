@@ -1,0 +1,228 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="1735e090-6926-4324-852d-add73060b882" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>YoYoDB</ID>
+  <Name>YoYoDB</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="84f8c38f-a33b-4cb0-ab97-115b906092c6">
+      <ID>Yo Yo Product</ID>
+      <Name>Yo Yo Product</Name>
+      <DimensionID>Yo Yo Product</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="5975bfd0-8b33-4bc4-87d1-ff6bea87c4ad">
+          <AttributeID>Product ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fa471ea0-e720-452f-9dac-88f9b2db48e7">
+          <AttributeID>Description</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="80e2dbe0-0b11-4754-924b-1991d7dcda00">
+      <ID>State Table</ID>
+      <Name>State Table</Name>
+      <DimensionID>State Table</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="8a818bff-7241-46db-8525-22073d8ce13e">
+          <AttributeID>State Name</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="36da18af-8a19-4b6b-b533-c7a205568912">
+      <ID>Reason Table</ID>
+      <Name>Reason Table</Name>
+      <DimensionID>Reason Table</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="0f06c9eb-d952-4e7d-a3a2-1b72ed49bd80">
+          <AttributeID>Reason Name</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="3956f398-ff32-4393-a1eb-2843329301d6">
+      <ID>Word Area Table</ID>
+      <Name>Word Area Table</Name>
+      <DimensionID>Word Area Table</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="adb72872-4aba-4a73-b03f-1ae214027a45">
+          <AttributeID>Work Area Name</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="dc8be3e5-e5be-4133-b6ac-a61c39a4a024">
+      <ID>Line Table</ID>
+      <Name>Line Table</Name>
+      <DimensionID>Line Table</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="549a2455-4719-490b-8895-359395503831">
+          <AttributeID>Line Name</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="4cf3d3df-975b-4f45-838b-d4bd331b354c">
+      <ID>Yo Yo Data</ID>
+      <Name>Yo Yo Data</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="c1f8de5d-28b1-4cc0-b503-62f91f92244f">
+          <ID>Yo Yo Data Count</ID>
+          <Name>Yo Yo Data Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="809f3322-0800-4ded-bc73-66020e7f77a8">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="5f686a8c-253a-4cb7-9a4d-5ca4cb1c57bc">
+              <TableID>dbo_YoYoData</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1afc00fd-c235-47c7-9ce9-56806b296d3a">
+          <CubeDimensionID>Yo Yo Product</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="090c0fb2-e4e8-4d3f-a4a7-5e76129f4753">
+              <AttributeID>Product ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="503c7c5a-68d7-44f4-8717-b2a059fe8fe6">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="fdec134c-9ffd-4ecf-a3c9-3002a7d752cb">
+                    <TableID>dbo_YoYoData</TableID>
+                    <ColumnID>ProductID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="8b303938-490c-4684-89da-b2a692644249">
+          <CubeDimensionID>State Table</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f7089151-353b-4578-8ced-27f7db9c559e">
+              <AttributeID>State Name</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7000228b-2f75-416f-80ff-8d2eebe8403f">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="133542b7-2029-42ea-9650-25a3e9396e5f">
+                    <TableID>dbo_YoYoData</TableID>
+                    <ColumnID>State</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="51717806-8b0c-4e8d-b304-c774fb35d334">
+          <CubeDimensionID>Reason Table</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="44ea8479-cfb2-4ac8-bf3c-c6159b4a47c1">
+              <AttributeID>Reason Name</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e817d398-2fae-4e9a-9833-9fac022f8b27">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d3d4a1b9-18bf-4786-a514-f751b77dbf72">
+                    <TableID>dbo_YoYoData</TableID>
+                    <ColumnID>Reason</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="cc84e273-5592-42bc-afde-546c36e7519e">
+          <CubeDimensionID>Word Area Table</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c5671e45-c6ab-4f4e-9db4-47adf4c6302b">
+              <AttributeID>Work Area Name</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="44bfaedc-910f-4528-ba62-0abf0b1fdb0f">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f5be436f-706f-4742-a45b-ff37d1ac5b43">
+                    <TableID>dbo_YoYoData</TableID>
+                    <ColumnID>WorkArea</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="7c53a0c9-7ce5-41a1-ab58-04054fb5c22c">
+          <CubeDimensionID>Line Table</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d560cfb8-02f2-45f1-8294-0ce1773b4eaf">
+              <AttributeID>Line Name</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f31eaf29-b0ae-48f3-8a80-747421e8934f">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="45f16936-a1a3-4b4a-93fa-ad542fae822f">
+                    <TableID>dbo_YoYoData</TableID>
+                    <ColumnID>Line</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="45fc3a93-f66d-4d86-8fec-5a36c56af09c">
+    <DataSourceViewID>YoYoDB</DataSourceViewID>
+  </Source>
+</Cube>
